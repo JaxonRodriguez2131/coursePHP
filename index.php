@@ -19,6 +19,32 @@
     echo $informacion;
     echo $c;
 
+
+    // condicional añidada
+
+    if($a>$b){
+        echo   " $a es mayor que $b " ;
+    }elseif($a<$b){
+        echo "$b es mayor que $a";
+    }else{
+        echo "valor de a y b son iguales ";
+    }
+
+    //operador ternario
+    $m = $a>$b ?  'mayor' : 'menor';
+    echo $m;
+
+    // seleccion multiple o switch
+    $z =3;
+    switch($z){
+        case '1' : case '2' : case '3' :
+            echo "Hello world";
+            break;
+        case '4' : case '5' : case '6' :
+            echo "hola mundo";
+            break; 
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +64,7 @@
         </h1>
     </section>
     <section>
-        
+
     </section>
 </body>
 </html>
