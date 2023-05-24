@@ -45,6 +45,14 @@
             break; 
     }
 
+    //estructura match, se utiliza solo para codigo que imprime un mensaje
+    echo match($z){
+        1 => "lunes",
+        2 => "Martes",
+        3 => "miercoles"
+    }
+
+    //Estrucuta algoritmica repetitiva o bucle
 ?>
 
 <!DOCTYPE html>
