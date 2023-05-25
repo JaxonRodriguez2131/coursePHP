@@ -278,7 +278,13 @@
             ?>
         </h1>
 
-        <form action="procesar.php" method="GET">
+        <form action="procesar.php" method="POST" enctype="multipart/form-data">
+            <!--El atributo multipart/form-data permite el envio de archivos dentro del formulario-->
+
+            <select name="genero" id="">
+                <option value="Masculino" > mascu</option>
+                <option value="Femenino"> feme</option>
+            </select>
 
             <label for="name">ingresa tu nombre</label>
             <input type="text" id="name" name="name">
@@ -293,6 +299,16 @@
 
             <input type="radio" id="femenino" name="sexo" value="femenino"> 
             <label for="sexo">Femenino</label>
+
+            <label for="">Rol</label>
+
+            <input type="checkbox" id="dev" name="rol[]">
+            <label for="rol[]">developer</label>
+            <input type="checkbox" id="editor" name="rol[]">
+            <label for="rol[]">Editor</label>
+
+            <label for="imagen">imagen</label>
+            <input type="file" name="imagen">
            
             <input type="submit" value="enviar">
         </form>
