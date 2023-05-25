@@ -50,9 +50,56 @@
         1 => "lunes",
         2 => "Martes",
         3 => "miercoles"
+    };
+
+    //Estrucuta algoritmica repetitiva indefinida  o bucle indefinida
+    $jaxon = 1;
+
+    while($jaxon <= 10){
+        echo $jaxon;
+        echo "<br/>";
+        $jaxon++;
     }
 
-    //Estrucuta algoritmica repetitiva o bucle
+    do{
+        echo "La condicion se ejecuta al menos una vez";
+    }while($jaxon == 10);
+
+    // base = 2 exponente = 5
+    $base = 2;
+    $exp = 5;
+    $cont = 1;
+    $valorexp = 1 ; 
+
+    while($cont<=$exp){
+       $valorexp = $valorexp * $base;
+       $cont++;
+    }
+    echo "<br/>";
+    echo "resultado = $valorexp";
+
+    // bucles definiod o secuencias algoritmicas repetitivas definidas
+    for($i = 0 ; $i<=$exp ; $i++){
+        $valorexp = $valorexp * $base;
+    }
+
+    echo "<br/>";
+    echo "resultado = $valorexp";
+
+
+    $filas = 10;
+
+    for ($i= 1 ; $i <= $filas ; $i++) { 
+         for ($j=1; $j <= $i ; $j++) { 
+              echo "*";
+         }
+         echo "<br/>";
+    }
+
+    $nombres = ['victor','pedro','paco'];
+    foreach ($nombres as $nombres) {
+        # code...
+    }
 ?>
 
 <!DOCTYPE html>
