@@ -1,4 +1,7 @@
 <?php
+
+    use clases\clases;
+
     declare(strict_types=1); //esta funcion sirve para cuando definimos un tipado fuerte 
 
     $nombre = "jaxon";
@@ -281,7 +284,7 @@
 
     //clases abstractas 
 
-    
+
 ?>
 
 
