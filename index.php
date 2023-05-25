@@ -78,7 +78,7 @@
     echo "<br/>";
     echo "resultado = $valorexp";
 
-    // bucles definiod o secuencias algoritmicas repetitivas definidas
+    // bucles definidos o secuencias algoritmicas repetitivas definidas
     for($i = 0 ; $i<=$exp ; $i++){
         $valorexp = $valorexp * $base;
     }
@@ -97,9 +97,36 @@
     }
 
     $nombres = ['victor','pedro','paco'];
-    foreach ($nombres as $nombres) {
-        # code...
+
+    foreach ($nombres as $indice => $nombre) {
+        echo $nombre . "indice $indice";
+        echo "<br/>";
     }
+    //Ademas de las condiciones se pueden controlar la continuidad de los bucles con continue and break
+
+    //Funciones, son lineas de codigo que ejecutan acciones que pueden usar varias veces en nuestro codigo
+    // Hay dos tipos de funciones, prestablecidas, ya creadas que vienen con php y propias
+
+    //Estos son algunos ejemplos de funciones prestablecidas 
+    echo "tiempo" . time() . "<br/>"; //una marca de tiempo
+    echo "raiz cuadrada de 9 " . sqrt(9) . "<br/>"; //para sacar raiz cuadrada de un numero
+    echo "numero aleatorio entre 0 y 100 = " . rand(0,100) . "<br/>"; // para un numero aleatorio
+    echo "pi = " . pi(); // el valor de pi
+
+    // como crear funciones propias
+
+    function factorial($parametro){
+        $factorial = 1;
+        for ($i=1; $i <=$parametro ; $i++) { 
+            $factorial = $factorial * $i;
+        }
+        echo "el factorial de $parametro es " . $factorial;
+        return $factorial;
+    }
+    echo "<br/>";
+    $answer = factorial(10);
+    echo $answer;
+
 ?>
 
 <!DOCTYPE html>
