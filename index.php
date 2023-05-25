@@ -257,7 +257,31 @@
     unset($datosmix[4]); //elimina un elemento de un array
 
 
+    //instanciar objetos de una clase 
+ /*
+    require_once('clases/personas.php');
+    $personone = new personas("hector","valencia",39);
+    $personone->nombre = "jaxon";
+    $personone ->apellido ="rodriguez";
 
+    var_dump($personone);
+
+    $personetwo = new personas("mujica","valencia",20);
+    $personetwo -> nombre = "iris";
+    $personetwo -> apellido = "valencia";
+
+    $personone -> setNombre("Jaxon Alexander");
+    echo "datos".  $personone->nombre;
+    echo "data" . $personone->getNombre();*/
+
+    require_once('clases/personas.php');
+    $personauno = new peruano();
+    $personauno->setApellido("rodriguez","cardona");
+
+
+    //clases abstractas 
+
+    
 ?>
 
 
