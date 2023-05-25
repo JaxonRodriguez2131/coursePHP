@@ -277,7 +277,30 @@
                   echo CURSO[1]; //imprimir una constante
             ?>
         </h1>
+
+        <form action="procesar.php" method="GET">
+
+            <label for="name">ingresa tu nombre</label>
+            <input type="text" id="name" name="name">
+
+            <label for="edad">ingresa tu edad</label>
+            <input type="number" id="edad" name="edad">
+
+            <label for="">ingresa tu genero</label>
+
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="sexo">Maculino</label>
+
+            <input type="radio" id="femenino" name="sexo" value="femenino"> 
+            <label for="sexo">Femenino</label>
+           
+            <input type="submit" value="enviar">
+        </form>
+
+        
+       
     </section>
+
     <section>
 
     </section>
